@@ -6,7 +6,7 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://${{ACCESS_TOKEN}}@github.com/AKramarenko/main.git"
+          source_repo: "https://${{secrets.ACCESS_TOKEN}}@github.com/AKramarenko/main.git"
           source_branch: "main"
-          destination_repo: "https://${{ACCESS_TOKEN}}@github.com/AKramarenko/mirror1.git"
+          destination_repo: "https://${{secrets.ACCESS_TOKEN}}@github.com/AKramarenko/mirror1.git"
           destination_branch: "main"
